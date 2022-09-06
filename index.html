@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/characters.css">
 </head>
 <body>
     <header>
@@ -22,7 +23,9 @@
             </p>
         </div>
     </header>
-        
+    
+    <main>
+
         <section class="form">
             <div class="container">
                 <form class="form__input" action="#">
@@ -39,8 +42,68 @@
                 </form>
             </div>
         </section>
+
+        <section class="characters">
+            <div class="container__flex">
+                
+                <article class="characters__card">
+                    <img
+                    src="./images/hermione-1x.jpg"
+                    srcset="./images/hermione-1x.jpg 1x,
+                    ./images/hermione-2x.jpg 2x"
+                    alt="Hermione Portrait"
+                    width="334" height="192">
+                    <div class="card__text">
+                        <h2 class="card__title">Hermione Granger</h2>
+                        <div class="card__description">
+                            <p>Actor: Emma Watson</p>
+                            <p>Gender: female</p>
+                            <p>House: Gryffindor</p>
+                            <p>Wand core: dragon heartstring</p>
+                            <p>Alive: yes</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="characters__card">
+                    <img src="./images/draco-1x.jpg"
+                    srcset="./images/draco-1x.jpg 1x,
+                    ./images/draco-2x.jpf 2x"
+                    alt="Draco Portrait"
+                    width="334" height="192">
+                    <div class="card__text">
+                        <h2 class="card__title">Draco Malfoy</h2>
+                        <div class="card__description">
+                        <p>Actor: Tom Felton</p>
+                        <p>Gender: male</p>
+                        <p>House: Slytherin</p>
+                        <p>Wand core: unicorn tail-hair</p>
+                        <p>Alive: yes</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="characters__card">
+                    <img
+                    src="./images/hermione-1x.jpg"
+                    srcset="./images/hermione-1x.jpg 1x,
+                    ./images/hermione-2x.jpg 2x"
+                    alt="Hermione Portrait"
+                    width="334" height="192">
+                    <div class="card__text">
+                        <h2 class="card__title">Hermione Granger</h2>
+                        <div class="card__description">
+                            <p>Actor: Emma Watson</p>
+                            <p>Gender: female</p>
+                            <p>House: Gryffindor</p>
+                            <p>Wand core: dragon heartstring</p>
+                            <p>Alive: yes</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
             
-        
-    
+    </main>       
 </body>
 </html>

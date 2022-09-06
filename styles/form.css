@@ -1,9 +1,3 @@
-.container {
-  max-width: 688px;
-  margin: 0 auto;
-  box-sizing: content-box;
-}
-
 .form {
   padding-bottom: 40px;
   border-bottom: 1px solid #dee2e6;
