@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/form.css">
 </head>
 <body>
     <header>
@@ -17,9 +19,28 @@
             <h1 class="header__title">Harry Potter</h1>
             <p class="header__description">
                 View all characters from the Harry Potter universe
-            </p>   
-            
+            </p>
         </div>
     </header>
+        
+        <section class="form">
+            <div class="container">
+                <form class="form__input" action="#">
+                    <label for="name">Name
+                        <input class="form__name"type="text" id="name" placeholder="Hermione">
+                    </label>
+                    <label for="school">School
+                        <select class="form__school" id="school">
+                            <option value="1" disabled>Choose one</option>
+                            <option value="2">Gryffindor</option>
+                            <option value="3">Slytherin</option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+        </section>
+            
+        
+    
 </body>
 </html>

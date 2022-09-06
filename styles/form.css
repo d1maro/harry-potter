@@ -1,0 +1,77 @@
+.container {
+  max-width: 688px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+.form {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.form__input {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+label {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #818182;
+}
+
+.form__name {
+  display: block;
+  min-width: 452px;
+  max-height: 38px;
+  margin-top: 3px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  padding-left: 17px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  box-sizing: border-box;
+
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.form__name::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #abb5be;
+}
+
+.form__school {
+  display: block;
+  min-width: 216px;
+  max-height: 38px;
+  margin-top: 3px;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  background-color: #ffffff;
+
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #abb5be;
+}
