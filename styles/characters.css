@@ -5,6 +5,7 @@
 
 .characters__card {
   max-width: 334px;
+  background-color: #ffffff;
   border: 1px solid #dee2e6;
   border-radius: 4px;
 }
