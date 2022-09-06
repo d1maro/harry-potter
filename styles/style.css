@@ -27,3 +27,19 @@ img {
   gap: 20px 0;
   flex-wrap: wrap;
 }
+
+@media (max-width: 768px) {
+  .container,
+  .container__flex {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container,
+  .container__flex {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}

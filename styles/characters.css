@@ -33,3 +33,9 @@
   text-align: left;
   color: #152536;
 }
+
+@media (max-width: 768px) {
+  .characters__card {
+    margin: 0 auto;
+  }
+}

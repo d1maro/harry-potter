@@ -20,3 +20,22 @@ header {
   letter-spacing: 0em;
   text-align: left;
 }
+
+@media (max-width: 576px) {
+  header {
+    padding-bottom: 28px;
+  }
+
+  .header__title {
+    padding-bottom: 14px;
+
+    font-size: 52px;
+    line-height: 63px;
+    letter-spacing: 0em;
+  }
+
+  .header__description {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
