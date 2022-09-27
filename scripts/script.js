@@ -38,18 +38,19 @@ function createCard(data) {
     const p5 = document.createElement("p");
     p5.textContent = `Alive: ${true ? "yes" : "no"}`;
 
+    card.append(img);
+
     description.append(p1);
     description.append(p2);
     description.append(p3);
     description.append(p4);
     description.append(p5);
 
-    text.append(description);
     text.append(title);
-
+    text.append(description);
+    
     card.append(text);
-    card.append(img);
-
+    
     return card;
 }
 
