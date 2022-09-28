@@ -61,4 +61,16 @@ data.forEach((elem) => {
 const form = document.forms[0];
 form.addEventListener("submit", (event) => event.preventDefault());
 
+const inputData = document.querySelector("input");
+inputData.addEventListener("change", inputHandler);
 
+function inputHandler(event) {
+  let x = event.target.value.toLowerCase().trim();
+  let y = data.filter(
+    (elem) =>
+      elem.name.toLowerCase().includes(x) ||
+      elem.actor.toLowerCase().includes(x)
+  );
+  container.innerHTML = "";
+  y.forEach((elem) => container.append(createCard(elem)));
+}
