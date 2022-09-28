@@ -67,12 +67,26 @@ inputData.addEventListener("change", inputHandler);
 const selectData = document.querySelector("select");
 selectData.addEventListener("change", inputHandler);
 
+// function inputHandler(event) {
+//   let x = event.target.value.toLowerCase().trim();
+//   let y = data.filter(
+//     (elem) =>
+//       elem.name.toLowerCase().includes(x) ||
+//       elem.actor.toLowerCase().includes(x)
+//   );
+//   container.innerHTML = "";
+//   y.forEach((elem) => container.append(createCard(elem)));
+// }
+
+//////////////////////////////////////////
+
 function inputHandler(event) {
   let x = event.target.value.toLowerCase().trim();
   let y = data.filter(
     (elem) =>
       elem.name.toLowerCase().includes(x) ||
-      elem.actor.toLowerCase().includes(x)
+      elem.actor.toLowerCase().includes(x) ||
+      elem.house.toLowerCase().includes(x)
   );
   container.innerHTML = "";
   y.forEach((elem) => container.append(createCard(elem)));
