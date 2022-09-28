@@ -36,7 +36,7 @@ function createCard(data) {
   p4.textContent = `Wand core: ${data.wand.core}`;
 
   const p5 = document.createElement("p");
-  p5.textContent = `Alive: ${true ? "yes" : "no"}`;
+  p5.textContent = `Alive: ${data.alive == true ? "yes" : "no"}`;
 
   card.append(img);
 
