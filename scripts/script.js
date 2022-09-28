@@ -67,27 +67,16 @@ inputData.addEventListener("change", inputHandler);
 const selectData = document.querySelector("select");
 selectData.addEventListener("change", inputHandler);
 
-// function inputHandler(event) {
-//   let x = event.target.value.toLowerCase().trim();
-//   let y = data.filter(
-//     (elem) =>
-//       elem.name.toLowerCase().includes(x) ||
-//       elem.actor.toLowerCase().includes(x)
-//   );
-//   container.innerHTML = "";
-//   y.forEach((elem) => container.append(createCard(elem)));
-// }
-
-//////////////////////////////////////////
-
-function inputHandler(event) {
-  let x = event.target.value.toLowerCase().trim();
-  let y = data.filter(
-    (elem) =>
-      elem.name.toLowerCase().includes(x) ||
-      elem.actor.toLowerCase().includes(x) ||
-      elem.house.toLowerCase().includes(x)
-  );
+function inputHandler() {
+  let pers = inputData.value.toLowerCase().trim();
+  console.log(pers);
+  let school = selectData.value.toLowerCase();
+  console.log(school);
+  let filtered = data
+    .filter((elem) => elem.name.toLowerCase().includes(pers))
+    .filter(
+      (elem) => elem.house.toLowerCase() === school || school === "allschools"
+    );
   container.innerHTML = "";
-  y.forEach((elem) => container.append(createCard(elem)));
+  filtered.forEach((elem) => container.append(createCard(elem)));
 }
