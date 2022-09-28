@@ -57,3 +57,8 @@ function createCard(data) {
 data.forEach((elem) => {
   container.append(createCard(elem));
 });
+
+const form = document.forms[0];
+form.addEventListener("submit", (event) => event.preventDefault());
+
+
