@@ -64,6 +64,9 @@ form.addEventListener("submit", (event) => event.preventDefault());
 const inputData = document.querySelector("input");
 inputData.addEventListener("change", inputHandler);
 
+const selectData = document.querySelector("select");
+selectData.addEventListener("change", inputHandler);
+
 function inputHandler(event) {
   let x = event.target.value.toLowerCase().trim();
   let y = data.filter(
