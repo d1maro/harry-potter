@@ -1,6 +1,20 @@
 "use strict";
 
-import { data } from "./hp.js";
+// import { data } from "./hp.js";
+
+let url = "http://hp-api.herokuapp.com/api/characters";
+
+// async function getData() {
+//   let response = await fetch(url);
+//   let data = await response.json();
+//   return data;
+// }
+
+let data = await fetch(url)
+  .then((res) => res.json())
+  .then((data) => data);
+
+console.log(data);
 
 const container = document.querySelector(".container__flex");
 
