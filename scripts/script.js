@@ -14,8 +14,6 @@ let data = await fetch(url)
   .then((res) => res.json())
   .then((data) => data);
 
-console.log(data);
-
 const container = document.querySelector(".container__flex");
 
 function createCard(data) {
@@ -23,7 +21,12 @@ function createCard(data) {
   card.className = "characters__card";
 
   const img = document.createElement("img");
-  img.setAttribute("src", data.image);
+  img.setAttribute(
+    "src",
+    data.image !== ""
+      ? data.image
+      : "https://i.pinimg.com/originals/8b/b3/99/8bb3991dca3078f26bab8d07770f8d33.png"
+  );
   img.setAttribute("width", 334);
   img.setAttribute("height", 192);
 
